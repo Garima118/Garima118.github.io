@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Garima Sharma | Data Analyst Portfolio</title>
+  <meta name="description" content="Garima Sharma – Data Analyst specializing in Python, SQL, Power BI, Excel, and Data Visualization. MCA (8.0 CGPA) & BCA (8.3 CGPA)." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">GS<span class="dot">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="https://www.linkedin.com/in/garima-sharma-6a645243a/" target="_blank" class="btn-hire">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="home" class="hero">
+    <div class="hero-bg-overlay"></div>
+    <div class="hero-particles" id="particles"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-badge">
+          <i class="fas fa-chart-line"></i>
+          <span>Data Analyst</span>
+        </div>
+        <h1 class="hero-title">
+          Hi, I'm <span class="highlight">Garima Sharma</span>
+        </h1>
+        <p class="hero-subtitle">
+          Turning data into <span class="typed-text" id="typed"></span>
+        </p>
+        <p class="hero-description">
+          MCA Post Graduate (8.0 CGPA) &amp; BCA Graduate (8.3 CGPA) specializing in Data Analytics. 
+          I love analyzing datasets, building interactive Power BI dashboards, and uncovering business insights with SQL &amp; Python.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary">
+            <i class="fas fa-folder-open"></i> View My Work
+          </a>
+          <a href="https://github.com/Garima118" target="_blank" class="btn-secondary">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a href="mailto:garimagks002@gmail.com" class="btn-secondary">
+            <i class="fas fa-envelope"></i> Email Me
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number" data-target="1">0</span>
+            <span class="stat-label">Featured Project</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="6">0</span><span>+</span>
+            <span class="stat-label">Core Skills</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="14">0</span>
+            <span class="stat-label">GitHub Repos</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image-wrapper">
+        <div class="hero-image-ring ring-1"></div>
+        <div class="hero-image-ring ring-2"></div>
+        <div class="hero-image-ring ring-3"></div>
+        <img src="garima_photo_professional.png" alt="Garima Sharma - Data Analyst" class="hero-profile-img" />
+        <div class="floating-badge badge-1">
+          <i class="fab fa-python"></i><span>Python</span>
+        </div>
+        <div class="floating-badge badge-2">
+          <i class="fas fa-database"></i><span>SQL</span>
+        </div>
+        <div class="floating-badge badge-3">
+          <i class="fas fa-chart-bar"></i><span>Power BI</span>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll Down</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about" class="about section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Who Am I</span>
+        <h2 class="section-title">About Me</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-card">
+          <div class="about-icon-wrap"><i class="fas fa-user-graduate"></i></div>
+          <h3>Education</h3>
+          <p><strong>MCA (8.0 CGPA)</strong> &amp; <strong>BCA (8.3 CGPA)</strong> in Computer Applications. Strong academic foundation in database systems, analytical thinking, and quantitative problem solving.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-icon-wrap"><i class="fas fa-lightbulb"></i></div>
+          <h3>My Approach</h3>
+          <p>I believe data tells a story — you just need the right tools to read it. I combine SQL, Power BI, and Python to clean, analyze, and visualize data in ways that are clear and actionable.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-icon-wrap"><i class="fas fa-rocket"></i></div>
+          <h3>Currently</h3>
+          <p>Actively working on hands-on Data Analytics projects and building dashboards. Looking for opportunities where I can apply my analytical skills to solve real business challenges.</p>
+        </div>
+      </div>
+
+      <div class="about-detail">
+        <div class="about-detail-text">
+          <h3>A Little More About Me</h3>
+          <p>I'm <strong>Garima Sharma</strong> — an MCA Post Graduate specializing in Data Analytics. My passion lies in transforming raw, unstructured datasets into intuitive visual stories that drive smart decisions.</p>
+          <p>I work extensively with <strong>Power BI, SQL, Excel, and Python (Pandas &amp; NumPy)</strong>. My featured project — an <strong>HR Analytics Employee Attrition Dashboard</strong> — brings all these technologies together to uncover deep workforce insights.</p>
+          <p>With an academic background in Computer Applications (BCA: 8.3 CGPA, MCA: 8.0 CGPA), I bring both theoretical rigor and practical technical skill to every analysis.</p>
+          <div class="about-info-grid">
+            <div class="info-item"><i class="fas fa-envelope"></i><a href="mailto:garimagks002@gmail.com">garimagks002@gmail.com</a></div>
+            <div class="info-item"><i class="fas fa-map-marker-alt"></i><span>India</span></div>
+            <div class="info-item"><i class="fas fa-briefcase"></i><span>Open to Opportunities</span></div>
+            <div class="info-item"><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/garima-sharma-6a645243a/" target="_blank">LinkedIn Profile</a></div>
+            <div class="info-item"><i class="fab fa-github"></i><a href="https://github.com/Garima118" target="_blank">GitHub Profile</a></div>
+          </div>
+          <a href="#contact" class="btn-primary mt-20">
+            <i class="fas fa-paper-plane"></i> Get In Touch
+          </a>
+        </div>
+        <div class="about-image-side">
+          <div class="about-img-frame">
+            <img src="garima_photo_professional.png" alt="Garima Sharma" class="about-img" />
+            <div class="about-img-decoration"></div>
+          </div>
+          <div class="about-experience-card">
+            <div class="exp-icon"><i class="fas fa-graduation-cap"></i></div>
+            <div class="exp-info">
+              <span class="exp-number">MCA &amp; BCA</span>
+              <span class="exp-text">MCA: 8.0 CGPA · BCA: 8.3 CGPA</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION SECTION ===== -->
+  <section id="education" class="education section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Academic Background</span>
+        <h2 class="section-title">Education &amp; Qualifications</h2>
+        <div class="section-line"></div>
+        <p class="section-desc">My academic journey in Computer Applications and Data Analytics.</p>
+      </div>
+
+      <div class="education-grid">
+        <!-- MCA Card -->
+        <div class="education-card">
+          <div class="edu-header">
+            <div class="edu-icon-wrap">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="edu-badge-group">
+              <span class="edu-level-badge">Post Graduation</span>
+              <span class="cgpa-pill"><i class="fas fa-award"></i> 8.0 CGPA</span>
+            </div>
+          </div>
+          <h3 class="edu-degree">Master of Computer Applications (MCA)</h3>
+          <div class="edu-field">Focus: Computer Applications, Data Systems &amp; Analytics</div>
+          <p class="edu-desc">Comprehensive post-graduate program covering advanced database architecture, data manipulation, algorithm design, and applied analytical methods. Developed solid analytical capabilities for solving complex, data-driven challenges.</p>
+          <div class="edu-tags-title">Key Areas &amp; Coursework</div>
+          <div class="edu-tags">
+            <span class="edu-tag">Database Management (DBMS)</span>
+            <span class="edu-tag">Python Programming</span>
+            <span class="edu-tag">Data Structures &amp; Algorithms</span>
+            <span class="edu-tag">Data Analysis &amp; Visualization</span>
+            <span class="edu-tag">Software Engineering</span>
+          </div>
+        </div>
+
+        <!-- BCA Card -->
+        <div class="education-card">
+          <div class="edu-header">
+            <div class="edu-icon-wrap">
+              <i class="fas fa-university"></i>
+            </div>
+            <div class="edu-badge-group">
+              <span class="edu-level-badge">Undergraduate</span>
+              <span class="cgpa-pill"><i class="fas fa-award"></i> 8.3 CGPA</span>
+            </div>
+          </div>
+          <h3 class="edu-degree">Bachelor of Computer Applications (BCA)</h3>
+          <div class="edu-field">Foundation: Computer Science &amp; Information Systems</div>
+          <p class="edu-desc">Rigorous undergraduate degree building a strong core in relational database management, structured query language (SQL), object-oriented programming, and mathematical &amp; statistical foundations.</p>
+          <div class="edu-tags-title">Key Areas &amp; Coursework</div>
+          <div class="edu-tags">
+            <span class="edu-tag">Relational Databases &amp; SQL</span>
+            <span class="edu-tag">Mathematics &amp; Statistics</span>
+            <span class="edu-tag">OOPs &amp; Programming</span>
+            <span class="edu-tag">Computer Networks</span>
+            <span class="edu-tag">Web Technologies</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <section id="skills" class="skills section">
+    <div class="skills-bg-shape"></div>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What I Know</span>
+        <h2 class="section-title">My Skills</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card" data-delay="0">
+          <div class="skill-icon-wrap powerbi">
+            <i class="fas fa-chart-bar"></i>
+          </div>
+          <h3>Power BI &amp; DAX</h3>
+          <p>Building interactive dashboards, writing DAX measures, data modeling, and publishing reports for business insights.</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="85">
+              <div class="skill-fill"></div>
+            </div>
+            <span class="skill-percent">85%</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-delay="100">
+          <div class="skill-icon-wrap sql">
+            <i class="fas fa-database"></i>
+          </div>
+          <h3>SQL</h3>
+          <p>Writing queries, joins, subqueries, and aggregations to extract meaningful insights from relational databases.</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="80">
+              <div class="skill-fill"></div>
+            </div>
+            <span class="skill-percent">80%</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-delay="200">
+          <div class="skill-icon-wrap excel">
+            <i class="fas fa-file-excel"></i>
+          </div>
+          <h3>Excel</h3>
+          <p>Pivot tables, VLOOKUP, Power Query, conditional formatting, and advanced formulas for data analysis and reporting.</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="88">
+              <div class="skill-fill"></div>
+            </div>
+            <span class="skill-percent">88%</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-delay="300">
+          <div class="skill-icon-wrap python">
+            <i class="fab fa-python"></i>
+          </div>
+          <h3>Python</h3>
+          <p>Using Python for data cleaning, exploratory data analysis (EDA), and visualizations in Jupyter Notebooks.</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="75">
+              <div class="skill-fill"></div>
+            </div>
+            <span class="skill-percent">75%</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-delay="400">
+          <div class="skill-icon-wrap pandas">
+            <i class="fas fa-layer-group"></i>
+          </div>
+          <h3>Pandas &amp; NumPy</h3>
+          <p>Data manipulation, cleaning, transformation, and aggregation using Pandas DataFrames and NumPy arrays.</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="78">
+              <div class="skill-fill"></div>
+            </div>
+            <span class="skill-percent">78%</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-delay="500">
+          <div class="skill-icon-wrap dataviz">
+            <i class="fas fa-chart-pie"></i>
+          </div>
+          <h3>Data Visualization</h3>
+          <p>Designing clear, effective charts and dashboards that communicate complex data in a simple and visual way.</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="82">
+              <div class="skill-fill"></div>
+            </div>
+            <span class="skill-percent">82%</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tools-section">
+        <h3 class="tools-title">Tools &amp; Technologies</h3>
+        <div class="tools-grid">
+          <div class="tool-chip"><i class="fas fa-chart-bar"></i> Power BI</div>
+          <div class="tool-chip"><i class="fas fa-database"></i> SQL</div>
+          <div class="tool-chip"><i class="fas fa-file-excel"></i> Excel</div>
+          <div class="tool-chip"><i class="fab fa-python"></i> Python</div>
+          <div class="tool-chip"><i class="fas fa-table"></i> Pandas</div>
+          <div class="tool-chip"><i class="fas fa-square-root-alt"></i> NumPy</div>
+          <div class="tool-chip"><i class="fas fa-code"></i> DAX</div>
+          <div class="tool-chip"><i class="fas fa-laptop-code"></i> Jupyter Notebook</div>
+          <div class="tool-chip"><i class="fab fa-git-alt"></i> Git</div>
+          <div class="tool-chip"><i class="fab fa-github"></i> GitHub</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section id="projects" class="projects section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">My Work</span>
+        <h2 class="section-title">Featured Project</h2>
+        <div class="section-line"></div>
+        <p class="section-desc">My current hands-on data analytics project — built with real data and industry tools.</p>
+      </div>
+
+      <div class="project-featured-wrap">
+
+        <!-- FEATURED PROJECT CARD -->
+        <div class="project-featured-card" id="proj-main">
+          <div class="project-featured-left">
+            <div class="project-featured-top">
+              <div class="project-icon-wrap proj-green">
+                <i class="fas fa-users-cog"></i>
+              </div>
+              <div class="project-tags">
+                <span class="tag">Power BI</span>
+                <span class="tag">SQL</span>
+                <span class="tag">Excel</span>
+                <span class="tag">Python</span>
+                <span class="tag">Jupyter Notebook</span>
+              </div>
+            </div>
+            <h3>HR Analytics — Employee Attrition Dashboard</h3>
+            <p>An end-to-end HR analytics project analyzing employee attrition patterns. Built an interactive Power BI dashboard using real HR data to understand <strong>why employees leave</strong> — evaluating factors like job role, salary hike, satisfaction scores, department, and tenure.</p>
+            <p>The project includes SQL-based data extraction, Python/Pandas for data cleaning and exploratory data analysis in Jupyter Notebook, and a complete Power BI dashboard with DAX calculations for core HR KPIs.</p>
+
+            <div class="project-highlights">
+              <div class="highlight-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Employee attrition rate analysis by department &amp; job role</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Interactive Power BI dashboard with DAX KPI calculations</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Data cleaning &amp; exploratory data analysis using Python (Pandas, NumPy)</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fas fa-check-circle"></i>
+                <span>SQL queries for data extraction, joining, and aggregation</span>
+              </div>
+            </div>
+
+            <div class="project-links">
+              <a href="https://github.com/Garima118/HR-Analytics-Employee-Attrition" target="_blank" class="btn-primary">
+                <i class="fab fa-github"></i> View on GitHub
+              </a>
+              <a href="https://www.linkedin.com/in/garima-sharma-6a645243a/" target="_blank" class="btn-secondary">
+                <i class="fab fa-linkedin"></i> LinkedIn
+              </a>
+            </div>
+          </div>
+
+          <div class="project-featured-right">
+            <!-- Animated Dashboard Preview -->
+            <div class="dashboard-preview">
+              <div class="dash-header">
+                <div class="dash-dot red"></div>
+                <div class="dash-dot yellow"></div>
+                <div class="dash-dot green"></div>
+                <span class="dash-title">HR Analytics Dashboard</span>
+              </div>
+              <div class="dash-kpis">
+                <div class="dash-kpi">
+                  <span class="dash-kpi-val">16.1%</span>
+                  <span class="dash-kpi-lbl">Attrition Rate</span>
+                </div>
+                <div class="dash-kpi">
+                  <span class="dash-kpi-val">1,470</span>
+                  <span class="dash-kpi-lbl">Total Employees</span>
+                </div>
+                <div class="dash-kpi">
+                  <span class="dash-kpi-val">237</span>
+                  <span class="dash-kpi-lbl">Left Company</span>
+                </div>
+              </div>
+              <div class="dash-chart-area">
+                <div class="dash-bar-group">
+                  <div class="dash-label">Sales Department</div>
+                  <div class="dash-bar-track"><div class="dash-bar-fill" style="width:82%"></div></div>
+                  <div class="dash-label">R&amp;D Department</div>
+                  <div class="dash-bar-track"><div class="dash-bar-fill" style="width:65%"></div></div>
+                  <div class="dash-label">HR Department</div>
+                  <div class="dash-bar-track"><div class="dash-bar-fill" style="width:48%"></div></div>
+                  <div class="dash-label">Finance Department</div>
+                  <div class="dash-bar-track"><div class="dash-bar-fill" style="width:38%"></div></div>
+                </div>
+                <div class="dash-donut">
+                  <svg viewBox="0 0 80 80" width="90">
+                    <circle cx="40" cy="40" r="28" fill="none" stroke="#e8f4fd" stroke-width="14"/>
+                    <circle cx="40" cy="40" r="28" fill="none" stroke="#2563eb" stroke-width="14"
+                      stroke-dasharray="75 101" stroke-dashoffset="25" transform="rotate(-90 40 40)"/>
+                    <circle cx="40" cy="40" r="28" fill="none" stroke="#60a5fa" stroke-width="14"
+                      stroke-dasharray="40 136" stroke-dashoffset="-50" transform="rotate(-90 40 40)"/>
+                    <circle cx="40" cy="40" r="28" fill="none" stroke="#93c5fd" stroke-width="14"
+                      stroke-dasharray="26 150" stroke-dashoffset="-90" transform="rotate(-90 40 40)"/>
+                    <text x="40" y="44" text-anchor="middle" font-size="9" font-weight="bold" fill="#0f172a">16.1%</text>
+                  </svg>
+                </div>
+              </div>
+              <div class="dash-footer">
+                <span><i class="fas fa-circle" style="color:#2563eb;font-size:8px"></i> Male</span>
+                <span><i class="fas fa-circle" style="color:#60a5fa;font-size:8px"></i> Female</span>
+                <span><i class="fas fa-circle" style="color:#93c5fd;font-size:8px"></i> Other</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- "More coming soon" card -->
+        <div class="coming-soon-card">
+          <div class="coming-icon"><i class="fas fa-code-branch"></i></div>
+          <h3>More Projects In Development</h3>
+          <p>Actively developing new analytics dashboards and machine learning exploratory analyses. Follow me on GitHub to stay updated with future releases!</p>
+          <a href="https://github.com/Garima118" target="_blank" class="btn-secondary">
+            <i class="fab fa-github"></i> Follow on GitHub
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact" class="contact section">
+    <div class="contact-bg"></div>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Let's Connect</span>
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="section-line"></div>
+        <p class="section-desc">Looking for collaboration, opportunities, or just want to talk data? Reach out directly!</p>
+      </div>
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <h3>Let's Talk Data 📊</h3>
+          <p>Whether you're looking for a data analyst for full-time opportunities, internship roles, or want to collaborate on an interesting project — feel free to drop a line. I'll get back to you promptly!</p>
+          <div class="contact-links">
+            <a href="mailto:garimagks002@gmail.com" class="contact-link-card" id="email-link">
+              <div class="contact-link-icon email-icon"><i class="fas fa-envelope"></i></div>
+              <div class="contact-link-info">
+                <span class="contact-link-label">Email</span>
+                <span class="contact-link-value">garimagks002@gmail.com</span>
+              </div>
+              <i class="fas fa-arrow-right contact-link-arrow"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/garima-sharma-6a645243a/" target="_blank" class="contact-link-card" id="linkedin-link">
+              <div class="contact-link-icon linkedin-icon"><i class="fab fa-linkedin-in"></i></div>
+              <div class="contact-link-info">
+                <span class="contact-link-label">LinkedIn</span>
+                <span class="contact-link-value">Garima Sharma</span>
+              </div>
+              <i class="fas fa-arrow-right contact-link-arrow"></i>
+            </a>
+            <a href="https://github.com/Garima118" target="_blank" class="contact-link-card" id="github-link">
+              <div class="contact-link-icon github-icon"><i class="fab fa-github"></i></div>
+              <div class="contact-link-info">
+                <span class="contact-link-label">GitHub</span>
+                <span class="contact-link-value">github.com/Garima118</span>
+              </div>
+              <i class="fas fa-arrow-right contact-link-arrow"></i>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contact-form">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <div class="input-wrap">
+              <i class="fas fa-user"></i>
+              <input type="text" id="name" name="name" placeholder="Your Name" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <div class="input-wrap">
+              <i class="fas fa-envelope"></i>
+              <input type="email" id="email" name="email" placeholder="your.email@example.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <div class="input-wrap">
+              <i class="fas fa-tag"></i>
+              <input type="text" id="subject" name="subject" placeholder="Data Analyst Opportunity / Collaboration" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <div class="input-wrap textarea-wrap">
+              <i class="fas fa-comment"></i>
+              <textarea id="message" name="message" placeholder="Hi Garima, I came across your portfolio and wanted to connect..." rows="5" required></textarea>
+            </div>
+          </div>
+          <button type="submit" class="btn-primary btn-full" id="submit-btn">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+          <div class="form-success" id="form-success">
+            <i class="fas fa-check-circle"></i> Message sent! I'll get back to you soon.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="nav-logo">GS<span class="dot">.</span></span>
+          <p>Data Analyst · MCA (8.0 CGPA) &amp; BCA (8.3 CGPA)</p>
+        </div>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#education">Education</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-socials">
+          <a href="mailto:garimagks002@gmail.com" class="social-icon" id="footer-email" title="Email Garima">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/garima-sharma-6a645243a/" target="_blank" class="social-icon" id="footer-linkedin" title="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/Garima118" target="_blank" class="social-icon" id="footer-github" title="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Garima Sharma · Data Analyst Portfolio</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
