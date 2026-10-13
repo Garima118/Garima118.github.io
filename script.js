@@ -229,12 +229,13 @@ hamburger && hamburger.addEventListener('click', () => {
   }
 });
 
-// ---- CONTACT FORM SUBMIT ----
+// ---- CONTACT FORM SUBMIT (CONNECTED TO GMAIL VIA FORMSUBMIT) ----
 const contactForm = document.getElementById('contact-form');
 const formSuccess = document.getElementById('form-success');
+const formError = document.getElementById('form-error');
 const submitBtn = document.getElementById('submit-btn');
 
-contactForm && contactForm.addEventListener('submit', (e) => {
+contactForm && contactForm.addEventListener('submit', async (e) => {
   e.preventDefault();
 
   const name = document.getElementById('name').value.trim();
@@ -244,25 +245,56 @@ contactForm && contactForm.addEventListener('submit', (e) => {
 
   if (!name || !email || !subject || !message) return;
 
-  // Simulate sending
   submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
   submitBtn.disabled = true;
   submitBtn.style.opacity = '0.8';
+  if (formError) formError.style.display = 'none';
 
-  setTimeout(() => {
-    submitBtn.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
-    submitBtn.style.background = 'linear-gradient(135deg, #10b981, #059669)';
-    formSuccess && formSuccess.classList.add('show');
-    contactForm.reset();
+  try {
+    const response = await fetch('https://formsubmit.co/ajax/garimagks002@gmail.com', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: JSON.stringify({
+        name: name,
+        email: email,
+        _subject: `Portfolio Message: ${subject} (${name})`,
+        message: message,
+        _template: 'table',
+        _captcha: 'false'
+      })
+    });
 
-    setTimeout(() => {
-      submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
-      submitBtn.style.background = '';
-      submitBtn.disabled = false;
-      submitBtn.style.opacity = '';
-      formSuccess && formSuccess.classList.remove('show');
-    }, 4000);
-  }, 1600);
+    const data = await response.json();
+
+    if (response.ok || data.success === 'true') {
+      submitBtn.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
+      submitBtn.style.background = 'linear-gradient(135deg, #10b981, #059669)';
+      formSuccess && formSuccess.classList.add('show');
+      contactForm.reset();
+
+      setTimeout(() => {
+        submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
+        submitBtn.style.background = '';
+        submitBtn.disabled = false;
+        submitBtn.style.opacity = '';
+        formSuccess && formSuccess.classList.remove('show');
+      }, 5000);
+    } else {
+      throw new Error(data.message || 'Submission error');
+    }
+  } catch (err) {
+    submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
+    submitBtn.disabled = false;
+    submitBtn.style.opacity = '';
+    if (formError) {
+      formError.style.display = 'block';
+    } else {
+      alert('Message could not be sent. Please email directly at garimagks002@gmail.com');
+    }
+  }
 });
 
 // ---- SMOOTH SCROLL FOR ALL ANCHOR LINKS ----
