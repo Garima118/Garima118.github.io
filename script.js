@@ -199,10 +199,16 @@ hamburger && hamburger.addEventListener('click', () => {
       ${['home','about','education','skills','projects','contact'].map(s =>
         `<a href="#${s}" style="font-size:1.4rem;font-weight:700;color:#0f172a;padding:10px 24px;text-transform:capitalize">${s}</a>`
       ).join('')}
-      <a href="https://www.linkedin.com/in/garima-sharma-6a645243a/" target="_blank"
-        style="margin-top:16px;padding:12px 28px;background:#2563eb;color:white;border-radius:12px;font-weight:600;font-size:0.95rem;display:inline-flex;align-items:center;gap:8px;">
-        <i class="fab fa-linkedin"></i> LinkedIn
-      </a>
+      <div style="display:flex;gap:10px;margin-top:16px;flex-wrap:wrap;justify-content:center;">
+        <a href="Garima_Sharma_Resume.pdf" download="Garima_Sharma_Resume.pdf"
+          style="padding:12px 24px;background:#10b981;color:white;border-radius:12px;font-weight:600;font-size:0.95rem;display:inline-flex;align-items:center;gap:8px;">
+          <i class="fas fa-file-arrow-down"></i> Resume
+        </a>
+        <a href="https://www.linkedin.com/in/garima-sharma-6a645243a/" target="_blank"
+          style="padding:12px 24px;background:#2563eb;color:white;border-radius:12px;font-weight:600;font-size:0.95rem;display:inline-flex;align-items:center;gap:8px;">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+      </div>
     `;
     document.body.appendChild(mobileMenu);
 
